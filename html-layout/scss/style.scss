@@ -49,6 +49,15 @@ body{
     flex-direction: column;
     margin-top: 34px;
 }
+.regform-box__error{
+    color: #FF7171;
+}
+.regform-box__error_hide{
+    display: none;
+}
+.regform-box__error_display{
+    display: block;
+}
 .regform-select{
     position: relative;
 }
