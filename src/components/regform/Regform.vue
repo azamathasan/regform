@@ -53,17 +53,7 @@
                         :languages="languages"
                         @language="selectLanguage"
                     ></Select>
-                    <!-- <div class="regform-select">
-                        <div class="regform-select__label">Язык</div>
-                        <input type="text" class="regform-select__selected select-click" placeholder="Язык" readonly>
-                        <div class="regform-select__arrow select-click"></div>
-                        <div class="regform-select__options regform-select__options_hidden">
-                            <div class="regform-select__option">Русский</div>
-                            <div class="regform-select__option">Английский</div>
-                            <div class="regform-select__option">Китайский</div>
-                            <div class="regform-select__option">Испанский</div>
-                        </div>
-                    </div> -->
+
                     <div class="regform-box__checkbox">
                         <input 
                             type="checkbox" 
@@ -92,9 +82,6 @@ import Select from './Select.vue'
 
 export default {
     name: 'Regform',
-    /* setup() {
-        
-    }, */
     data(){
         return {
             languages: ['Русский','Английский','Китайский','Испанский',],
@@ -177,11 +164,6 @@ export default {
             console.log('nameRegExp');
             console.log('this.userReg.name.length: '+this.userReg.name.length);
             console.log('this.userReg.name.length: '+this.userReg.name.length);
-
-
-            // проверка на вхождение
-            // "Hello Tproger".includes("Tproger"); // true
-            // "Hello Tproger".includes("Hello", 1); // false
             if(this.userReg.name.length&&!regexp.test(this.userReg.name)){
                 // error message for name
                 this.errors.nameError=true;

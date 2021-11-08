@@ -13,7 +13,6 @@
             class="regform-select__arrow"
             @click="selectClick"
         ></div>
-        <!-- <div class="regform-select__options regform-select__options_hidden"> -->
         <div 
             class="regform-select__options"
             :class="optionClass"
@@ -27,10 +26,6 @@
                 >
                 {{lang}}
             </div>
-            <!-- <div class="regform-select__option">Русский</div>
-            <div class="regform-select__option">Английский</div>
-            <div class="regform-select__option">Китайский</div>
-            <div class="regform-select__option">Испанский</div> -->
         </div>
     </div>
 </template>
@@ -38,7 +33,6 @@
 <script>
 export default {
     name: 'Select',
-    // props: ['selectedClick', 'optionClick', 'optionsMouseLeave', 'languages'],
     props: {
         languages: Array,
         },
@@ -51,9 +45,6 @@ export default {
     mounted(){
         console.log('select component mounted');
     },
-    /* setup() {
-        
-    }, */
     computed:{
         optionClass: function(){
             if(this.optionsVisibility){
